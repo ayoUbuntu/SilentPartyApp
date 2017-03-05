@@ -1,0 +1,18 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Servlet 3.0 Web Application</display-name>
+
+	<servlet>
+		<servlet-name>resolverServlet</servlet-name>
+		<servlet-class>de.tud.iptk.ResolverServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>resolverServlet</servlet-name>
+		<url-pattern>/resolver</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>de.tud.iptk.InitListener</listener-class>
+	</listener>
+</web-app>
